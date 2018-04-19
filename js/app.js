@@ -17,3 +17,10 @@
 // 5. Create a span element of the id of "mail" and give it a content of 11. Append this element into the "Messages" li element.
 
 
+//6. Target the div id "first-name1" and replace the text "First Name" to "Wendy".
+
+
+//7. Target the div id "first-name2" and replace the text "First Name" to "Marie".
+
+
+//8. Target the div id "first-name3" and replace the text "First Name" to "Anna".
