@@ -107,3 +107,41 @@ nav{
 	margin-top: 25px;
 	
 }
+
+#matches{
+	margin-top: 100px;
+}
+
+.row{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 45px;
+	margin-bottom: 45px;
+  }
+
+  img{
+	height: 150px;
+	width: 150px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	margin-bottom: 18px;
+	-webkit-transition: -webkit-transform 1.0s ease-in-out;
+	transition: transform 1.0s ease-in-out;
+  }
+
+  #online{
+	padding: 20px;
+	font-size: 30px;
+	font-style: italic;
+	color: green;
+	font-size: 20px;
+  }
+
+#first-name1, #first-name2, #first-name3, .contact{
+	text-align: center;
+	font-size: 20px;
+}
+
+
