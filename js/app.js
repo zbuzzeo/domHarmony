@@ -24,3 +24,7 @@
 
 
 //8. Target the div id "first-name3" and replace the text "First Name" to "Anna".
+
+
+//9. Target the div classes "last-name" and replace the text "Last Name" for each person. 
+

@@ -49,3 +49,11 @@ marName.innerHTML = 'Marie';
 
 var annaName = document.getElementById('first-name3');
 annaName.innerHTML = 'Anna';
+
+//9. Target the div classes "last-name" and replace the text "Last Name" for each person. 
+
+var lastName = document.getElementsByClassName('last-name');
+
+lastName[0].innerHTML = 'Thomas';
+lastName[1].innerHTML = 'Calendar';
+lastName[2].innerHTML = 'Miller';
