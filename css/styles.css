@@ -2,146 +2,198 @@ body{
 	font-family: 'Exo', sans-serif;
 }
 
-header{
+#topMenu{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
 	background-color: #6495ED;
-	height: 55px;
-	padding: 10px;
+	padding: 10px;	
 }
+
 .menu{
-	display: inline;
-	margin: 10px;
 	font-size: 25px;
+	list-style-type: none;
+	margin: 20px;
 	color: #FFFFFF;
+	transition: color 0.6s ease-out;
 }
 
 .menu:hover{
-	color: #00008B;
+	color: #FF1493
 }
 
-nav{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+i{
+	margin-right: 10px;
 }
 
 #bio{
-	height: 400px;
-	padding: 25px;
-	margin-top: 20px;
-}
-
-#profilePic{
-	float: left;
-	width: 30%;
-	height: 300px;
-	border: 1px solid black;
-}
-
-#data{
-	float: right;
-	width: 65%;
-}
-
-#fullname{
-	font-size: 40px;
-	border-bottom: 1px solid black;
-	font-weight: 900;
-}
-
-#fullname, #age, #location, #wants, #iconwrapper{
-	margin: 5px;
-}
-
-#age, #location, #wants{
-	font-size: 25px;
-}
-
-
-#iconwrapper{
-	margin-top: 15px;
-}
-
-#emailIcon{
-	float: left;
-	width: 60px;
-	color: #6495ED;
-}
-#emailIcon:hover{
-	color: #0000CD;
-}
-
-#heartIcon{
-	color: #FFC0CB;
-	margin-left: 100px;
-}
-#heartIcon:hover{
-	color: #FF0000;
-}
-
-#emailIcon, #heartIcon{
-	font-size: 50px;
-}
-
-#profile{
-	height: 400px;
-	padding: 25px;
-}
-
-#pro1{
+	display: flex;
+	flex-direction: row;
+	height: 500px;
 	padding: 20px;
-	font-size: 30px;
-	font-style: italic;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
 
-#pro2{
-	padding: 20px;
-	font-size: 30px;
-	font-style: italic;
+#profilePic{
 	border: 1px solid black;
-	text-align: center;
+	border-radius: 20px;
+	height: 300px;
+}
+
+#data{
+	margin-left: 20px;
+	width: 100%;	
+}
+
+#fullname{
+	font-size: 45px;
+	border-bottom: 1px solid black;
 	font-weight: 900;
-	background-color: #00FA9A;
-	margin-top: 25px;
-	
 }
 
-#matches{
-	margin-top: 100px;
+#fullname, #age, #job, #hobbies, #location, #wants, #iconwrapper{
+	margin: 5px;
+	transition: color 0.6s ease-out;
 }
 
-.row{
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 45px;
-	margin-bottom: 45px;
-  }
+#fullname:hover, #age:hover, #job:hover, #hobbies:hover, #location:hover, #wants:hover{
+	margin: 5px;
+	color: #FF1493;
+}
 
-  img{
-	height: 150px;
-	width: 150px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 50%;
-	margin-bottom: 18px;
-	-webkit-transition: -webkit-transform 1.0s ease-in-out;
-	transition: transform 1.0s ease-in-out;
-  }
+#age, #job, #hobbies, #location, #wants{
+	font-size: 30px;
+}
 
-  #online{
+#iconwrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 15px;
+}
+#thumb, #mail, #heart{
+	font-size: 50px;
+	transition: color 0.6s ease-out;
+}
+
+#thumb:hover, #mail:hover, #heart:hover{
+	color:#FF1493
+}
+
+#profile{
 	padding: 20px;
 	font-size: 30px;
-	font-style: italic;
-	color: green;
-	font-size: 20px;
-  }
-
-#first-name1, #first-name2, #first-name3,.last-name, .contact{
-	text-align: center;
-	font-size: 20px;
+	height: 250px;
+	border-bottom: 1px solid black;
 }
 
+.otherMatches{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 10px;
+	background-color: #6495ED;
+}
+.otherBox{
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+	font-size: 25px;
+}
 
+.firstName, .otherAge, .status, .motto{
+	color: #FFFFFF;	
+	transition: color 0.6s ease-out;	
+}
+
+.firstName:hover, .otherAge:hover, .status:hover, .motto:hover{
+	color:#FF1493
+}
+
+.other{
+	border: 1px solid black;
+	border-radius: 20px;
+	width: 300px;
+	height: 300px;
+}
+
+@media screen and (max-width: 920px){
+	#topMenu{
+		justify-content: space-around;
+	}
+	.menu{
+		font-size: 20px;
+	}
+	#bio{
+		height: 300px;
+	}
+	#profilePic{
+		height: 200px;
+	}
+	
+	#fullname{
+		font-size: 30px;
+	}
+	#age, #job, #hobbies, #location, #wants{
+		font-size: 20px;
+	}
+	#thumb, #mail, #heart{
+		font-size: 30px;
+	}
+	#profile{
+		font-size: 20px;
+	}
+	.otherBox{
+		font-size: 18px;
+	}
+	.other{
+		width: 200px;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	#topMenu, #bio{
+		flex-direction: column;
+		align-items: center;
+	}
+	#bio{
+		height: 400px;
+	}
+	#imgwrapper{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%
+	}
+	#profilePic{
+		height: 120px;
+	}
+	#fullname{
+		font-size: 20px;
+	}
+	#age, #job, #hobbies, #location, #wants{
+		font-size: 15px;
+	}
+	#thumb, #mail, #heart{
+		font-size: 20px;
+	}
+	#data{
+		text-align: center;
+	}
+	#profile{
+		font-size: 15px;
+	}
+	.otherMatches{
+		flex-direction: column;
+		align-items: center;
+	}
+	.otherBox{
+		font-size: 15px;
+	}
+	.other{
+		width: 120px;
+		height: 120px;
+	}
+}
