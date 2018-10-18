@@ -79,6 +79,16 @@ console.log(divWants);
 
 //9. In the div id profile section, create a paragraph element with an id of pro2 and create a your own profile for Ronald (at least 2 sentences).
 
+var pPro2 = document.createElement('p');
+var profile = document.getElementById('profile');
+
+pPro2.id = 'pro2';
+pPro2.innerHTML = 'The only reason I want a girlfriend is so that when I\'m singing Fergilicious and it\'s at the part where she says "I be up in the gym just workin on my fitness he\'s my witness\" I can point to her and he\'ll do the little \"wooOOH\" part because right now I have to do both parts by myself and it\'s stressful because right after the wooOOH part I have to get right back into rapping and the transition is harder than you think';
+profile.appendChild(pPro2);
+
+spacer(9)
+console.log(pPro2);
+
 //10. In the div id matches section, target the first div element with the class name of firstName and change Name to Wendy.
 
 //11. In the div id matches section, target the first div element with the class name of otherAge and change Age to 48.
