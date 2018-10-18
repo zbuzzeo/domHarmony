@@ -53,9 +53,18 @@ divHobbies.innerHTML = 'Long romantic walks on the beach, candle-lit Big Mac din
 data.appendChild(divHobbies);
 
 spacer(6);
-console.log(divHobbes);
+console.log(divHobbies);
 
 //7. In the div id data section, create a div with an id of location and give it the following information: Honolulu, HI.
+
+var divLocation = document.createElement('div');
+
+divLocation.id = 'location';
+divLocation.innerHTML = 'Honolulu, HI';
+data.appendChild(divLocation);
+
+spacer(7);
+console.log(divLocation);
 
 //8. In the div id data section, create a div with an id of wants and give it the following information: Looking for a Mrs. McDonald.
 
