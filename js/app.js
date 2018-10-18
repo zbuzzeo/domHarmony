@@ -137,6 +137,14 @@ console.log(getClassOtherAge[1]);
  //div with class name of status
  //div with class anem of Motto
 
+ var getClassImage = document.getElementsByClassName('other');
+ var getClassMotto = document.getElementsByClassName('motto');
+
+getClassImage[2].src = '../assets/flo.jpg';
+getClassFirstName[2].innerHTML = 'Flo';
+getClassOtherAge[2].innerHTML = 48;
+getClassStatus[2].innerHTML = 'Single';
+getClassMotto[2].innerHTML = 'You could save hundreds or more on car insurance!';
 
 
 
