@@ -118,14 +118,17 @@ console.log(getClassStatus[0]);
 
 //13. In the div id matches section, target the second div element with the class name of firstName and change Name to Peko Chan.
 
-var getClassFirstName = document.getElementsByClassName('firstName');
-
 getClassFirstName[1].innerHTML = 'Peko Chan';
 
 spacer(13);
 console.log(getClassFirstName[1]);
 
 //14. In the div id matches section, target the second div element with the class name of otherAge and change Age to 68.
+
+getClassOtherAge[1].innerHTML = 68;
+
+spacer(14)
+console.log(getClassOtherAge[1]);
 
  //Final Boss Create your own profile into the page:
  //change image to match your profile
