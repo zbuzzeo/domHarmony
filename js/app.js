@@ -1,8 +1,19 @@
 /*Hey Prepsters! Let's help Ronald McDonald find true love by revising his online dating profile!*/
 
+function spacer(exerciseNum){
+      console.log('Exercise:', exerciseNum, '\n');
+}
+
 //1. In the nav element, target the span element with the id of 'matCount' and change the number from 0 to 11.
 
+spacer(1);
+matCount.innerHTML = 11;
+
+console.log(matCount);
+
 //2. In the nav element, target the span element with the id of 'msgCount' and change the number from 0 to 23.
+
+
 
 //3. In the div id data section, target the div element with the id of 'fullname' and change Full Name to Ronald McDonald.
 
