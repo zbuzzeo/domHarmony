@@ -100,7 +100,21 @@ console.log(getClassFirstName[0]);
 
 //11. In the div id matches section, target the first div element with the class name of otherAge and change Age to 48.
 
+var getClassOtherAge = document.getElementsByClassName('otherAge');
+
+getClassOtherAge[0].innerHTML = 48;
+
+spacer(11);
+console.log(getClassOtherAge[0]);
+
 //12. In the div id matches section, target the first div element with the class name of status and change Status to Single Mother.
+
+var getClassStatus = document.getElementsByClassName('status');
+
+getClassStatus[0].innerHTML = 'Single Mother';
+
+spacer(12);
+console.log(getClassStatus[0]);
 
 //13. In the div id matches section, target the second div element with the class name of firstName and change Name to Peko Chan.
 
